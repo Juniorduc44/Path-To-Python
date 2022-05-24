@@ -1,4 +1,4 @@
-import math
+from math import trunc
 
 t = input("(y) or (n) to play: ")
 count = 0
@@ -17,7 +17,7 @@ while t == "y":
 
   p = (Btc1)
   pp = (p * 100000000)#makes sure to get best whole number
-  ppp = math.trunc(pp)#strips decimals
+  ppp = trunc(pp)#strips decimals
   Pppp = "{:,.8f}".format(p)#convert for Bitcoin 8 decimals.
   pppp = "{:,.0f}".format(ppp)#converts with comma 0 decimals.
   print(f" ***${btc} is {Pppp}BTC, which converts to {pppp}sats.***")
