@@ -47,7 +47,8 @@ for i in range(appliances):
     ckWh14 = kWh4 * rate
     ckWh15 = kWh5 * rate
     ckWh16 = kWh6 * rate
-
+    
+    #format to USD currency
     c1 = "${:,.2f}".format(ckWh1)
     c2 = "${:,.2f}".format(ckWh12)
     c3 = "${:,.2f}".format(ckWh13)
