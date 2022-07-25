@@ -1,8 +1,9 @@
 
-a = float(input("Enter 1st number: "))
-b = float(input("Enter 2nd number: "))
+a = float(input("Enter starting number: "))
+b = float(input("Enter final number: "))
 
-c = a-b
+c = b-a
+
 
 
 if a>b: #if a is greater than b then to get to b your result will be negative.
@@ -11,8 +12,8 @@ if a>b: #if a is greater than b then to get to b your result will be negative.
   e = d*100 
   ee = f"{e:.2f}"
   print(f'''
-  1.) 1030.59
-  2.) 1205
+  1.) {a}
+  2.) {b}
 
         The results of getting from (1) to (2):
         
@@ -26,10 +27,10 @@ elif a<b:
   e = d*100
   ee = f"{e:.2f}"
   print(f'''
-  1.) 1030.59
-  2.) 1205
+  1.) {a}
+  2.) {b}
 
-        The results of getting from (2) to (1):
+        The results of getting from (1) to (2):
         
                     Diff = {cc}
                   % Diff = {ee}%
