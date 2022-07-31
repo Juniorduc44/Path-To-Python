@@ -42,6 +42,3 @@ elif a==b:
 
 else:
   print("Thank you, come again.")
-
-
-print(f"")
