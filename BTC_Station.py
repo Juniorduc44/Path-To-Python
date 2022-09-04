@@ -1,6 +1,6 @@
 #make sure to download bitcoin with "pip install bitcoin"
 #make sure to download blockchain with "pip install blockchain"
-#Python 3.10.2
+
 
 class btcTown():
     def btConvert(self,B_USD):
@@ -15,7 +15,7 @@ class btcTown():
         else:
             print("Invalid input. Thank you, come again!")
             quit
-    def btCSpec(ticker, spec):
+    def btCSpec(self,ticker,spec):
         x = spec, ticker[spec].p15min        
         X = x[0]
         X2 = x[1]
@@ -23,9 +23,9 @@ class btcTown():
         EnD=input("Choose (y) or (n) to continue: ")
         if EnD == "y":
             main()
-        elif EnD == "n":
+        else:
             quit
-    def btCVmnt(ticker,spec,ducket):
+    def btCVmnt(self, ticker,spec,ducket):
         x = exchangerates.to_btc(spec, ducket)
         p = (x * 100000000)#makes sure to get best whole number
         pp = trunc(p)#strips decimals     
@@ -128,7 +128,7 @@ class btcNation():
         spec = input("Now choose a currency: ")        
         for Spec in list:            
             if spec == Spec:
-                BtC.btCSpec(ticker,spec,)
+                BtC.btCSpec(ticker, spec)
     
     #This will give us the fiat amount of Bitcoin from country user inputs.
     def BtcVspec(self):
@@ -186,7 +186,7 @@ def main():
     2.) All fiat values of Bitcoin
     3.) Create Bitcoin Wallet
     4.) Choose a fiat to Bitcoin value
-    5.) Choose a fiat amount to view Bitcoin amount
+    5.) Enter fiat amount to view Bitcoin amount
     6.) Look at Bitcoin Stats
     
       '''
