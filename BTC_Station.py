@@ -1,6 +1,6 @@
 #make sure to download bitcoin with "pip install bitcoin"
 #make sure to download blockchain with "pip install blockchain"
-
+#Python 3.10.2
 
 class btcTown():
     def btConvert(self,B_USD):
